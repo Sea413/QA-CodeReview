@@ -2,9 +2,11 @@
 
 <ul>
   {{#each model.questions as |question|}}
-    <li>{{#link-to 'question' question.id}}{{question.title}}{{question.author}}{{/link-to}}</li>
+    <li>{{#link-to 'question' question.id}}{{question.title}} {{question.author}}{{/link-to}}</li>
   {{/each}}
 </ul>
 {{new-question save2="save3"}}
+
+<img src="http://www.pleated-jeans.com/wp-content/uploads/2012/07/fashionablygeek.jpg">
 
 {{outlet}}
