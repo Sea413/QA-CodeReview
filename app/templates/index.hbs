@@ -1,9 +1,9 @@
 <h1>Have all your spectacular questions answered here!</h1>
 
 <ul>
-  {{#each model.question as |question|}}
-      {{question-tile question=question }}
-    {{/each}}
+  {{#each model.questions as |question|}}
+    <li>{{#link-to 'question' question.id}}{{question.title}}{{question.author}}{{/link-to}}</li>
+  {{/each}}
 </ul>
 
 {{new-question save2="save3"}}
