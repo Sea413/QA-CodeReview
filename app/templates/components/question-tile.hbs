@@ -1,4 +1,4 @@
-<li>{{question.author}} wants to know {{question.title}}
+<li> {{#link-to 'question' question.id}}{{question.author}} wants to know {{question.title}} {{/link-to}}
   {{#if isImageShowing}}
     <p><img src={{questions.image}} {{action 'imageHide'}}></p>
   {{else}}
