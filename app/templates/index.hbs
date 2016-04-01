@@ -3,7 +3,6 @@
 <ul>
   {{#each model.questions as |question|}}
     <li>{{#link-to 'question' question.id}}{{question.title}}{{question.author}}{{/link-to}}</li>
-    {{update-question question=question update="update"}}
   {{/each}}
 </ul>
 {{new-question save2="save3"}}
