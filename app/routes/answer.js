@@ -14,7 +14,7 @@ export default Ember.Route.extend({
     this.sendAction('save2', params);
   },
   destroyAnswer(answer) {
-  answer.destroyRecord();
-  this.transitionTo('index');
+    answer.destroyRecord();
+    this.transitionTo('index');
 }
 });

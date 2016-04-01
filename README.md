@@ -1,7 +1,7 @@
 # Qa
 
 This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This is an amazing question and answer forum designed to answer all the questions you ever needed to know.
 
 ## Prerequisites
 
@@ -41,7 +41,7 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### Deploying
 
-Specify what it takes to deploy your app.
+Deploying the app does not require additional steps from the user. It is hosted on a server so feel free to interact with it how you may.
 
 ## Further Reading / Useful Links
 
@@ -50,4 +50,3 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
