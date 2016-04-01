@@ -8,6 +8,10 @@ export default Ember.Component.extend({
     },
     imageHide: function() {
       this.set('isImageShowing', false);
+    },
+    delete(questions) {
+    if (confirm('Do you wish to remove the question?')) {
+      this.sendAction('destroyQuestion', rental);
     }
   }
 });

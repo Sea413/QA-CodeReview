@@ -1,7 +1,8 @@
-<li>{{questions.author}} wants to know {{questions.body}}
-    {{#if isImageShowing }}
-       <p><img src={{questions.image}}></p>
-     {{else}}
-       <button>Show image</button>
-    {{/if}}
+<li>{{question.author}} wants to know {{question.title}}
+  {{#if isImageShowing}}
+    <p><img src={{questions.image}} {{action 'imageHide'}}></p>
+  {{else}}
+    <button {{action 'imageShow'}}>Image</button>
+  {{/if}}
+  <button {{action 'delete' question}}>REMOVE THIS QUESTION</button>
 </li>
