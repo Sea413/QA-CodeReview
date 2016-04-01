@@ -1,0 +1,35 @@
+{{#if updateRentalForm}}
+  <h4>Update {{question.author}}'s question {{question.title}}</h4>
+    <div>
+      <form>
+        <div class="form-group">
+          <label for="title">Question Title</label>
+          {{input value=title id="title" placeholder=question.title}}
+        </div>
+
+        <div class="form-group">
+          <label for="author">Username</label>
+          {{input value=author id="author" placeholder=question.author}}
+        </div>
+
+        <div class="form-group">
+          <label for="body">Question?</label>
+          {{input value=body id="body" placeholder=question.body}}
+        </div>
+
+        <div class="form-group">
+          <label for="image">Funny Internet picture</label>
+          {{input value=image id="image" placeholder=question.image}}
+        </div>
+
+        <div class="form-group">
+          <label for="notes">edit your notes</label>
+          {{input value=notes id="notes" placeholder=question.notes}}
+        </div>
+
+        <button {{action 'update' question}}>Save</button>
+      </form>
+    </div>
+{{else}}
+    <button {{action 'updateQuestionForm'}}>Update</button>
+{{/if}}

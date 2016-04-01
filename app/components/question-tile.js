@@ -9,6 +9,9 @@ export default Ember.Component.extend({
     imageHide: function() {
       this.set('isImageShowing', false);
     },
+    update(question, params) {
+      this.sendAction('update', question, params);
+    },
     delete(questions) {
     if (confirm('Do you wish to remove the question?')) {
       this.sendAction('destroyQuestion', rental);
