@@ -1,12 +1,9 @@
-<li> {{#link-to 'question' question.id}}{{question.author}} wants to know {{question.title}} {{/link-to}}
+<h2>{{question.author}} wants to know {{question.content}}</h2>
   {{#if isImageShowing}}
-    <p><img src={{questions.image}} {{action 'imageHide'}}></p>
+    <p><img src={{question.image}} {{action 'imageHide'}}></p>
   {{else}}
     <button {{action 'imageShow'}}>Image</button>
   {{/if}}
-  {{update-question question=question update="update"}}
-  <button {{action 'delete' question}}>REMOVE THIS QUESTION</button>
-</li>
 
 <li>
 {{question.answer.username}}
