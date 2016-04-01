@@ -1,8 +1,8 @@
 <h1>Have all your spectacular questions answered here!</h1>
 
 <ul>
-  {{#each model as |question|}}
-      {{question-tile question=question update="update" destroyQuestion="destroyQuestion"}}
+  {{#each model.question as |question|}}
+      {{question-tile question=question }}
     {{/each}}
 </ul>
 

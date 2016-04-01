@@ -7,3 +7,8 @@
   {{update-question question=question update="update"}}
   <button {{action 'delete' question}}>REMOVE THIS QUESTION</button>
 </li>
+
+<li>
+{{question.answer.username}}
+{{question.answer.content}}
+</li>
