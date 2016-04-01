@@ -7,13 +7,14 @@ export default Ember.Component.extend({
       this.set('addNewQuestion', true);
     },
 
-    save1() {
+    save3() {
       var params = {
         title: this.get('title'),
         author: this.get('author'),
         body: this.get('body'),
         image: this.get('image'),
         notes: this.get('notes'),
+        answers: this.get('answer')
 
       };
       this.set('addNewQuestion', false);
