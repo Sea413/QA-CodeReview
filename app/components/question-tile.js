@@ -5,15 +5,14 @@ export default Ember.Component.extend({
   isImageShowing: false,
   updateQuestionForm: false,
   actions: {
-    addToVote(item) {
-      this.get('voteCount').add(item);
-      console.log("hey there");
+    addToVote(question) {
+      this.get('voteCount').add(question);
+      console.log(this.get('voteCount'));
+      var newTotal = question.get('questionVotes') + 1;
+      console.log(newTotal);
+        this.sendAction('addtestting',question, newTotal);
+        console.log("pretty wonky",question);
 
-    },
-    addLocalvotes(question){
-      log
-      this.set((question.questionVotes) += 1);
-      console.log(question.questionVotes);
     },
     imageShow() {
       this.set('isImageShowing', true);

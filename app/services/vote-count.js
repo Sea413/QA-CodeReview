@@ -12,8 +12,8 @@ export default Ember.Service.extend({
     return totalVote;
 
   }),
-  add(item) {
-    this.get('votes').pushObject(item);
+  add(question) {
+    this.get('votes').pushObject(question);
   },
   testAdmin(){
       var adminShowing = this.get('adminShowing');

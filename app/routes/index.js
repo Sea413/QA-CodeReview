@@ -15,6 +15,10 @@ export default Ember.Route.extend({
       newQuestion.save();
       this.transitionTo('index');
     },
+    addtestting(question){
+      console.log(question);
+      console.log("do other things");
+    },
     update(question, params) {
       Object.keys(params).forEach(function(key) {
         if(params[key]!==undefined) {

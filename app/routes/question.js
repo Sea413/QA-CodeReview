@@ -15,8 +15,15 @@ export default Ember.Route.extend({
       question.save();
       this.transitionTo('index');
     },
-    addLocalvotes(question){
-      question.set(questionVotes += 1);
+    addtestting(question){
+      console.log("please do things");
+      console.log("this is a really cool question",question);
+      console.log("I believe in ember", question.get('questionVotes'));
+      console.log("wub wub wub", question);
+      var newVotes = question.get('questionVotes') +1;
+      console.log(newVotes);
+      console.log(question.get('questionVotes'));
+      question.set('questionVotes', newVotes);
       question.save();
     },
     save3(params) {
