@@ -27,6 +27,11 @@
           {{input value=notes id="notes"}}
         </div>
 
+        <div class="form-group">
+          <label for="questionVotes">Initial Vote</label>
+          {{input type='number' value=questionVotes id="questionVotes"}}
+        </div>
+
         <button {{action 'save3'}}>Save your question!</button>
       </form>
     </div>

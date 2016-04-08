@@ -14,7 +14,9 @@ export default Ember.Component.extend({
         body: this.get('body'),
         image: this.get('image'),
         notes: this.get('notes'),
+        questionVotes: parseInt(this.get('questionVotes')),
         answers: this.get('answer')
+
       };
       this.set('addNewQuestion', false);
       this.sendAction('save2', params);
