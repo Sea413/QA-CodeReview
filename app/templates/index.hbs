@@ -7,7 +7,7 @@
 
 <ul>
   {{#each model.questions as |question|}}
-    <li>{{#link-to 'question' question.id}}{{question.title}} {{question.questionVotes}}{{/link-to}}</li>
+    <li>{{vote-popularity question}}{{#link-to 'question' question.id}}{{question.title}} {{question.questionVotes}}{{/link-to}}</li>
   {{/each}}
 </ul>
 {{new-question save2="save3"}}
