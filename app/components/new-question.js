@@ -14,7 +14,7 @@ export default Ember.Component.extend({
         body: this.get('body'),
         image: this.get('image'),
         notes: this.get('notes'),
-        questionVotes: parseInt(this.get('questionVotes')),
+        questionVotes: parseInt('0'),
         answers: this.get('answer')
 
       };
