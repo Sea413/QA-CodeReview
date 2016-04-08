@@ -1,10 +1,13 @@
 <h1>Have all your spectacular questions answered here!</h1>
 
 <h2>{{display-vote}}</h2>
+{{#each model.questions as |question|}}
+{{vote-sort question=question}}
+{{/each}}
 
 <ul>
   {{#each model.questions as |question|}}
-    <li>{{#link-to 'question' question.id}}{{question.title}} {{question.author}}{{/link-to}}</li>
+    <li>{{#link-to 'question' question.id}}{{question.title}} {{question.questionVotes}}{{/link-to}}</li>
   {{/each}}
 </ul>
 {{new-question save2="save3"}}
