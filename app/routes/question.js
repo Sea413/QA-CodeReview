@@ -15,6 +15,10 @@ export default Ember.Route.extend({
       question.save();
       this.transitionTo('index');
     },
+    addLocalvotes(question){
+      question.set(questionVotes += 1);
+      question.save();
+    },
     save3(params) {
       var newAnswer = this.store.createRecord('answer', params);
       var question = params.question;
