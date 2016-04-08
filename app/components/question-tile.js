@@ -1,9 +1,14 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  voteCount: Ember.inject.service(),
   isImageShowing: false,
   updateQuestionForm: false,
   actions: {
+    addToVote(item) {
+      this.get('voteCount').add(item)
+      console.log("hey there");
+    },
     imageShow() {
       this.set('isImageShowing', true);
     },
