@@ -19,7 +19,6 @@ export default Ember.Route.extend({
       console.log("please do things");
       console.log("this is a really cool question",question);
       console.log("I believe in ember", question.get('questionVotes'));
-      console.log("wub wub wub", question);
       var newVotes = question.get('questionVotes') +1;
       console.log(newVotes);
       console.log(question.get('questionVotes'));
